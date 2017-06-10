@@ -1,0 +1,7 @@
+[
+  {
+    "id": "main.hello",
+    "description": "A Hello Message to make sure everything's working with an app",
+    "defaultMessage": "Hello World!"
+  }
+]
