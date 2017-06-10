@@ -1,7 +1,7 @@
 import React from 'react';
 import {IntlProvider} from 'react-intl';
 import {Provider} from 'react-redux';
-import MedidationsListContainer from './medidations/containers/MedidationsListContainer';
+import MedidationsPage from './medidations/components/MedidationsPage';
 
 import store from './store';
 
@@ -28,7 +28,7 @@ export default class App extends React.Component {
   render () {
     return <IntlProvider locale={locale} messages={this.state.messages}>
       <Provider store={store}>
-        <MedidationsListContainer />
+        <MedidationsPage />
       </Provider>
     </IntlProvider>;
   }
