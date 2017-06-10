@@ -16,9 +16,8 @@ export function medidatationsLoaded (medidatations) {
   };
 }
 
-export const loadMedidations = () => dispatch => {
+export const loadMedidations = () => async dispatch => {
   dispatch(medidatationsLoading());
-  axios.get('//localhost:4000/medidatations?_expand=title').then(response => {
-    dispatch(medidatationsLoaded(response.data));
-  });
+  let response = await axios.get('//localhost:4000/medidatations?_expand=title');
+  dispatch(medidatationsLoaded(response.data));
 };
