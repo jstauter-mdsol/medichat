@@ -6,6 +6,7 @@ import MedidationsList from '../components/MedidationsList';
 
 class MedidationsListContainer extends React.Component {
   componentDidMount () {
+    if (this.props.medidations.loaded) return;
     this.props.loadMedidations();
   }
 

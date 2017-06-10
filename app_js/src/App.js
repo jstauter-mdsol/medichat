@@ -1,6 +1,7 @@
 import React from 'react';
 import {IntlProvider} from 'react-intl';
 import {Provider} from 'react-redux';
+import {BrowserRouter} from 'react-router-dom';
 import MedidationsPage from './medidations/components/MedidationsPage';
 
 import store from './store';
@@ -28,7 +29,9 @@ export default class App extends React.Component {
   render () {
     return <IntlProvider locale={locale} messages={this.state.messages}>
       <Provider store={store}>
-        <MedidationsPage />
+        <BrowserRouter>
+          <MedidationsPage />
+        </BrowserRouter>
       </Provider>
     </IntlProvider>;
   }

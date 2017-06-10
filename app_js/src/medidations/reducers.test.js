@@ -8,6 +8,7 @@ describe('medidations reducer', () => {
   it('has a default value', () => {
     expect(medidations(undefined, {type: 'doesnt matter'})).toEqual({
       loading: false,
+      loaded: false,
       items: []
     });
   });
@@ -16,6 +17,7 @@ describe('medidations reducer', () => {
     expect(medidations(undefined, {type: MEDIDATIONS_LOADING}))
       .toEqual({
         loading: true,
+        loaded: false,
         items: []
       });
   });
@@ -25,6 +27,7 @@ describe('medidations reducer', () => {
     expect(medidations({loading: true, items: []}, action))
       .toEqual({
         loading: false,
+        loaded: true,
         items: [{x: 1}]
       });
   });

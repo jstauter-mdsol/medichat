@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
-import {Pending} from 'lego/lib/Pending';
 import {FormattedMessage} from 'react-intl';
 
 export default class MedidationsList extends React.PureComponent {
@@ -20,7 +20,7 @@ export default class MedidationsList extends React.PureComponent {
       <tbody>
         {this.props.items.map(m => (
           <tr key={m.id} >
-            <td>{m.name}</td>
+            <td><Link to={`/${m.id}`}>{m.name}</Link></td>
             <td>{m.title.value}</td>
           </tr>
         ))}
