@@ -1,0 +1,4 @@
+node_modules/
+.vscode/symbols.json
+app_js/config/i18n/messages/
+app_js/build/

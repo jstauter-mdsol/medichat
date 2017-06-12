@@ -1,0 +1,10 @@
+[
+  {
+    "id": "medidations.list.name",
+    "defaultMessage": "Name"
+  },
+  {
+    "id": "medidations.list.title",
+    "defaultMessage": "Title"
+  }
+]
