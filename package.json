@@ -1,8 +1,5 @@
 {
-  "name": "blueprint_spa",
-  "version": "1.0.0",
-  "description": "An example webpack/react setup for medidata SPAs",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "npm run lint && npm run karma-ci",
     "karma-watch": "karma start app_js/config/karma.dev.config.js",
@@ -15,16 +12,6 @@
     "en-translations": "node app_js/config/i18n/scripts/copy-en.js",
     "json-server": "json-server --watch app_js/db.json --port 4000"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mdsol/blueprint_spa.git"
-  },
-  "author": "Max Polun <maxpolun@gmail.com>",
-  "license": "UNLICENCED",
-  "bugs": {
-    "url": "https://github.com/mdsol/blueprint_spa/issues"
-  },
-  "homepage": "https://github.com/mdsol/blueprint_spa#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "babel-core": "^6.25.0",
@@ -53,8 +40,10 @@
     "redux-thunk": "^2.2.0",
     "sandman-bower": "git+ssh://git@github.com/mdsol/sandman-bower.git#1.2.3",
     "sass-loader": "^6.0.5",
+    "socket.io": "^2.0.3",
     "style-loader": "^0.18.2",
     "svg-sprite-loader": "^3.0.5",
+    "uuid": "^3.1.0",
     "webpack": "^2.6.1"
   },
   "devDependencies": {

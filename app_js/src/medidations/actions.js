@@ -3,21 +3,21 @@ import axios from 'axios';
 export const MEDIDATIONS_LOADED = 'MEDIDATIONS_LOADED';
 export const MEDIDATIONS_LOADING = 'MEDIDATIONS_LOADING';
 
-export function medidatationsLoading (medidatations) {
+export function medidationsLoading (medidations) {
   return {
     type: MEDIDATIONS_LOADING
   };
 }
 
-export function medidatationsLoaded (medidatations) {
+export function medidationsLoaded (medidations) {
   return {
     type: MEDIDATIONS_LOADED,
-    payload: medidatations
+    payload: medidations
   };
 }
 
 export const loadMedidations = () => async dispatch => {
-  dispatch(medidatationsLoading());
-  let response = await axios.get('//localhost:4000/medidatations?_expand=title');
-  dispatch(medidatationsLoaded(response.data));
+  dispatch(medidationsLoading());
+  let response = await axios.get('//localhost:4000/medidations?_expand=title');
+  dispatch(medidationsLoaded(response.data));
 };

@@ -5,10 +5,10 @@ import reducer from './reducers';
 
 const middlewares = [
   thunk
-]
+];
 
 const enhancers = [
-  applyMiddleware(...middlewares),
+  applyMiddleware(...middlewares)
 ];
 
 const composeEnhancers =

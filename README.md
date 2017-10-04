@@ -1,16 +1,3 @@
-Blueprint SPA
-=============
-
-An example/boilerplate for Medidata Single Page Applications
-
-The `app_js/` directory is where the single page app resides -- you can integrate it
-with any back-end framework/server/language.
-
-## React SPA
-
-Currently React is the preferred framework for new javascript applications at medidata,
-so this repo emphasizes react. It is somewhat opinionated in setting up an application to match existing practice at Medidata.
-
 ### Quick Setup
 
 We recommend yarn, but npm will also work.
@@ -56,11 +43,3 @@ For Production
 4. Css will be extracted to `bundle.css`
 5. In production, include these files in your app: `vendor.js`, `bundle.js`, `bundle.css`
 6. How best to integrate with your back-end framework will depend on what framework you are using.
-
-### Rails
-
-See `blueprint_ui` for an example of a rails app integrated with an SPA.
-
-### .net
-
-See `Gambit` (aka RaveX) project `Medidata.Cloud.Edc` as an example of a large .net app integrated with an SPA.
