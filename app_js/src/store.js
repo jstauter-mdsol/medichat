@@ -3,13 +3,9 @@ import thunk from 'redux-thunk';
 
 import reducer from './reducers';
 
-const middlewares = [
-  thunk
-];
+const middlewares = [thunk];
 
-const enhancers = [
-  applyMiddleware(...middlewares)
-];
+const enhancers = [applyMiddleware(...middlewares)];
 
 const composeEnhancers =
   (/^production$/.test(process.env.NODE_ENV) && compose) ||

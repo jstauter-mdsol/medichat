@@ -13,10 +13,8 @@ module.exports = {
   target: 'web',
   context: path.join(__dirname, '../src/'),
   entry: {
-    bundle: ['babel-polyfill', 'react-hot-loader/patch', './main.js'],
-    devHeader: ['./devHeader.js'],
-    vendor: ['react', 'redux', 'react-redux', 'redux-thunk', 'react-bootstrap',
-      'react-router', 'react-intl']
+    vendor: ['react', 'redux', 'react-redux', 'redux-thunk', 'react-bootstrap', 'react-router', 'react-intl'],
+    bundle: ['babel-polyfill', 'react-hot-loader/patch', './main.js']
   },
 
   output: {

@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
-
-import {FormattedMessage} from 'react-intl';
+import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 export default class MedidationsList extends React.PureComponent {
   render () {
@@ -19,7 +18,7 @@ export default class MedidationsList extends React.PureComponent {
       </thead>
       <tbody>
         {this.props.items.map(m => (
-          <tr key={m.id} >
+          <tr key={m.id}>
             <td><Link to={`/${m.id}`}>{m.name}</Link></td>
             <td>{m.title.value}</td>
           </tr>

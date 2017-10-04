@@ -1,4 +1,4 @@
-import {medidations} from './reducers';
+import { medidations } from './reducers';
 import {
   MEDIDATIONS_LOADING,
   MEDIDATIONS_LOADED

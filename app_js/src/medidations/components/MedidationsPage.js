@@ -1,7 +1,6 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
-import {FormattedMessage} from 'react-intl';
-
+import { Route } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 import Sidebar from 'lego/lib/Sidebar';
 import SidebarLayout from 'lego/lib/SidebarLayout';
 import PageHeader from 'lego/lib/PageHeader';
@@ -25,5 +24,4 @@ export default class MedidationsPage extends React.Component {
   }
 }
 
-MedidationsPage.propTypes = {
-};
+MedidationsPage.propTypes = {};

@@ -1,7 +1,5 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 
-import {medidations} from './medidations/reducers';
+import { medidations } from './medidations/reducers';
 
-export default combineReducers({
-  medidations
-});
+export default combineReducers({ medidations });

@@ -7,8 +7,6 @@ config.module.rules[0].use = ExtractTextPlugin.extract({
   use: ['css-loader', 'sass-loader']
 });
 
-config.plugins = config.plugins.concat([
-  new ExtractTextPlugin('./bundle.css')
-]);
+config.plugins.push(new ExtractTextPlugin('./bundle.css'));
 
 module.exports = config;

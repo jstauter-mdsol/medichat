@@ -1,7 +1,7 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
-import {loadMedidations} from '../actions';
+import { loadMedidations } from '../actions';
 import MedidationsList from '../components/MedidationsList';
 
 class MedidationsListContainer extends React.Component {
@@ -15,8 +15,7 @@ class MedidationsListContainer extends React.Component {
   }
 }
 
-MedidationsListContainer.propTypes = {
-};
+MedidationsListContainer.propTypes = {};
 
 export default connect(
   ({medidations}) => ({medidations}),
