@@ -13,6 +13,7 @@
     "json-server": "json-server --watch app_js/db.json --port 4000"
   },
   "dependencies": {
+    "@mdsol/sandman": "https://s3.amazonaws.com/mdsol-resources/sandman-npm/mdsol-sandman-1.4.0.tgz",
     "axios": "^0.16.2",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
@@ -26,7 +27,7 @@
     "file-loader": "^0.11.2",
     "glob": "^7.1.2",
     "image-webpack-loader": "^3.3.1",
-    "lego": "https://s3.amazonaws.com/mdsol-resources/lego/lego-2.1.0.tgz",
+    "lego": "https://s3.amazonaws.com/mdsol-resources/lego/lego-2.6.0.tgz",
     "node-sass": "^4.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
@@ -38,7 +39,6 @@
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "sandman-bower": "git+ssh://git@github.com/mdsol/sandman-bower.git#1.2.3",
     "sass-loader": "^6.0.5",
     "socket.io": "^2.0.3",
     "style-loader": "^0.18.2",

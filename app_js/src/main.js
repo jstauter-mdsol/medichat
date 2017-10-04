@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import 'sandman-bower/assets/platform.css';
+import '@mdsol/sandman/assets/platform.css';
 
 import App from './App';
 

@@ -1,6 +1,6 @@
 module.exports = function (server) {
   const io = require('socket.io')(server);
-  const uuidv4 = require('uuid/v4');
+  // const uuidv4 = require('uuid/v4');
 
   let numUsers = 0;
 

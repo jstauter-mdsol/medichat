@@ -18,4 +18,4 @@ server.listen(port, function () {
   console.log(`Server listening on ${port}, go to http://localhost:${port}/`);
 });
 
-const io = require('./io')(server);
+require('./io')(server);
